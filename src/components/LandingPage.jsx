@@ -1,21 +1,21 @@
 import constData from "../constData";
 import Connect from "./Connect";
 
-export default function Test() {
+export default function LandingPage() {
   return (
     <>
-      <div className="flex h-96 p-8 justify-center">
+      <div className="flex h-screen py-16 justify-center">
         <div className="">
-          <div className="text-2xl font-bold h-20">
-            <h2>
+          <div className="text-2xl font-bold pb-8">
+            <h1 className="flex h-16 text-4xl text-orange-400 font-bold gap-3">
               Hi, I'm {constData.aboutMe.firstName}!{" "}
               <span role="img" aria-label="Emoji">
                 🤙🏾
               </span>
-            </h2>
+            </h1>
           </div>
-          <div className="h-20 max-w-2xl">
-            <div>{constData.aboutMe.bio}</div>
+          <div className="pb-10 max-w-2xl">
+            <p className="font-semibold">{constData.aboutMe.bio}</p>
           </div>
           <div>{constData.email}</div>
           <div className="">

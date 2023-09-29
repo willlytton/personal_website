@@ -2,7 +2,7 @@ export default {
   aboutMe: {
     firstName: "Will",
     lastName: "Lytton",
-    bio: "Software Engineer from Brooklyn, NY looking for full-time opportunities. Look upon my works and if you like what you see, feel free to send me an email at.",
+    bio: "I'm a Fullstack Software Engineer from Brooklyn, NY looking for full-time opportunities. Look upon my works and if you like what you see, feel free to contact me using the socials.",
     year: new Date().getFullYear(),
   },
 

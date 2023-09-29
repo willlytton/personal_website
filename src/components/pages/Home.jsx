@@ -1,15 +1,16 @@
 import Footer from "../Footer";
 import NavBar from "../NavBar";
+import Layout from "../Layout";
 
-import Test from "../Test";
+import Test from "../LandingPage";
 
 export default function Home() {
   return (
     <>
       <div className>
-        <NavBar />
-        <Test className="" />
-        <Footer />
+        <Layout>
+          <Test className="" />
+        </Layout>
       </div>
     </>
   );
