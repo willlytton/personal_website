@@ -7,9 +7,12 @@ export default function Footer() {
     <>
       <div className="flex justify-center items-end py-8 px-4">
         <div className="">
-          <div className="flex gap-4 pb-2">
-            <a href={resume}>Resume</a>
-            <a href={`mailto:${constData.socialMedia.email}`}>Contact</a>
+          <div className="flex items-center flex-col gap-4 pb-5">
+            <Connect />
+            <div className="flex gap-4">
+              <a href={resume}>Resume</a>
+              <a href={`mailto:${constData.socialMedia.email}`}>Contact</a>
+            </div>
           </div>
           <div>
             <p>

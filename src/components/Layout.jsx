@@ -1,7 +1,7 @@
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
     return (
         <div className>
             <NavBar />

@@ -8,7 +8,7 @@ export default function NavBar() {
         <div className="flex gap-3">
         <Link
             className="text-black text-lg font-extrabold focus:outline-none focus:border-b-2 focus:border-orange-400 transition-transform transform hover:scale-105"
-            to="/home"
+            to="/"
           >
             Start Here
           </Link>
@@ -26,7 +26,7 @@ export default function NavBar() {
           </Link>
           <Link
             className="text-black text-lg font-extrabold focus:outline-none focus:border-b-2 focus:border-orange-400 transition-transform transform hover:scale-105"
-            to="/paintings"
+            to="/artpage"
           >
             Art
           </Link>
