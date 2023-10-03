@@ -4,7 +4,7 @@ import resume from "../assets/wimaple.pdf";
 
 export default function Footer() {
   return (
-    <>
+    <footer>
       <div className="flex justify-center items-end py-8 px-4">
         <div className="">
           <div className="flex items-center flex-col gap-4 pb-5">
@@ -22,6 +22,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </>
+    </footer>
   );
 }

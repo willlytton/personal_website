@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
     return (
         <div className>
             <NavBar />
-                <div>
+                <div className="flex justify-center">
                     {children}
                 </div>
             <Footer />

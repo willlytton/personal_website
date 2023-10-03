@@ -6,12 +6,6 @@ export default function NavBar() {
     <>
       <nav className="flex justify-between items-end py-8 px-4 gap-">
         <div className="flex gap-3">
-        <Link
-            className="text-black text-lg font-extrabold focus:outline-none focus:border-b-2 focus:border-orange-400 transition-transform transform hover:scale-105"
-            to="/"
-          >
-            Start Here
-          </Link>
           <Link
             className="text-black text-lg font-extrabold focus:outline-none focus:border-b-2 focus:border-orange-400 transition-transform transform hover:scale-105"
             to="/about"
