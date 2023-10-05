@@ -1,8 +1,17 @@
+import car from "./assets/art/car.png";
+import jonah from "./assets/art/baby_jonah.JPG";
+import untitled2020 from "./assets/art/untitled2020.png";
+import paintedWoman from "./assets/art/painted_woman.JPG";
+import paintedWoman2 from "./assets/art/painted_woman_2.JPG";
+import carcosa from "./assets/art/they_said.png";
+import oshisHouse from "./assets/art/oshis_house.png";
+import abbigail from "./assets/art/abbigail.JPG";
+
 export default {
   aboutMe: {
     firstName: "Will",
     lastName: "Lytton",
-    bio: "I'm a Fullstack Software Engineer from Brooklyn, NY looking for full-time opportunities. Look upon my works and if you like what you see, feel free to contact me using the socials.",
+    bio: "I'm a Fullstack Software Engineer currently residing in Brooklyn, NY looking for full-time opportunities. Look upon my works and if you like what you see, feel free to contact me using the socials.",
     year: new Date().getFullYear(),
   },
 
@@ -18,66 +27,62 @@ export default {
     github: "./assets/github.svg",
   },
 
-  artImages: [
+  works: [
     {
       id: 1,
       title: "Central Highlands",
       description: "Oil on wood panel",
       year: 2020,
-      image: "/assets/artImages/car.jpg",
+      image: car,
     },
     {
       id: 2,
       title: "untitled",
       description: "Oil on wood panel",
       year: 2020,
-      image: "/assets.artImages/untitled2020.jpg",
+      image: untitled2020,
     },
     {
       id: 3,
       title: "alla prima of a woman",
       description: "Oil on wood panel",
       year: 2020,
-      image: "/assets/artImages/painted_woman.jpg",
+      image: paintedWoman,
     },
     {
       id: 4,
       title: "alla prima of a woman 2",
       description: "Oil on wood panel",
       year: 2020,
-      image: "/assets/artImages/painted_woman2.jpg"
+      image: paintedWoman2
     },
     {
       id: 5,
       title: "They said it was six beams of yellow light/ Carcosa",
       description: "Oil on wood panel",
       year: 2020,
-      image: "/assets/artImage/they_said.jpg"
+      image: carcosa
     },
     {
       id: 6,
       title: "Oshi's House",
       description: "Oil on canvas",
       year: 2020,
-      image: "asssets/artImages/oshis_house.jpg"
-    },
-    {
-      id: 6,
-      title: "Jonah",
-      description: "Oil on moleskin paper",
-      year: 2019,
-      image: "assets/artImages/baby_jonah.jpg"
+      image: oshisHouse,
     },
     {
       id: 7,
-      title: "Abigail",
+      title: "Jonah",
       description: "Oil on moleskin paper",
       year: 2019,
-      image: "assets/artImages/abbigail.jpg",
+      image: jonah,
     },
     {
       id: 8,
-      title: ""
+      title: "Abigail",
+      description: "Oil on moleskin paper",
+      year: 2019,
+      image: abbigail,
     }
   ],
 
@@ -87,28 +92,28 @@ export default {
       title: "untitled",
       description: "digital",
       year: 2019,
-      image: "assets/artImages/digital_1.jpg"
+      image: "./assets/artImages/digital_1.jpg"
     },
     {
       id: 2,
       title: "untitled",
       description: "digital",
       year: 2019,
-      image: "assets/artImages/digital_2.jpg"
+      image: "./assets/artImages/digital_2.jpg"
     },
     {
       id: 3,
       title: "untitled",
       description: "digital",
       year: 2017,
-      image: "assets/artImages/digital_3.jpg"
+      image: "./assets/artImages/digital_3.jpg"
     },
     {
       id: 4,
       title: "frame painting",
       description: "procreate",
       year: 2020,
-      image: "assets/artImages/scene_from_movie.jpg"
+      image: "./assets/artImages/scene_from_movie.jpg"
 
     },
     {
@@ -116,7 +121,7 @@ export default {
       title: "untitled",
       description: "pencil scanned and colored in photoshop",
       year: 2019,
-      image: "assets/artImages/digital_4.jpg"
+      image: "./assets/artImages/digital_4.jpg"
     }
   ]
 };
