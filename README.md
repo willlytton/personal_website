@@ -1,6 +1,6 @@
 https://willmaple.netlify.app/
 
-Personal portfolio website build on top of netflify CLI
+Personal portfolio website build on top of netlify CLI
 
 Uses vites build config with React and Tailwind
 * uses React-Dom-Router for page routing
