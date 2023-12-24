@@ -20,7 +20,7 @@ export default function NavBar() {
           </Link>
           <Link
             className="text-black text-lg font-extrabold focus:outline-none focus:border-b-2 focus:border-orange-400 transition-transform transform hover:scale-105"
-            to="/artpage"
+            to="/art"
           >
             Art
           </Link>

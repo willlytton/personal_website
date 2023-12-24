@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
-import Layout from "../Layout";
+
 
 const About = () => {
   return (
-    <Layout>
       <div className="flex justify-center">
         <div className="w-full pt-10 max-w-xl py-10">
 
-          <div className="">
+          <div>
             <h1 className="flex h-16 justify-center text-4xl text-orange-400 font-bold">
               About.
             </h1>
             <p className="pb-10">
               Hi, my name is William and I am fullstack software engineer with a
-              love for the arts and all things related to the human experience. I believe by bridging arts and
+              love for all things art understanding of the human experience. I believe by bridging arts and
               technology with a little bit of love we can solve most of the worlds
               problems. I am based out of Brooklyn, NY, but I'm rooted from the
               southern state of Georgia. If you like what you see and would like
@@ -22,7 +21,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="">
+          <div>
             <h1 className="flex h-16 justify-center text-3xl text-orange-400 font-bold">
               Education.
             </h1>
@@ -36,28 +35,14 @@ const About = () => {
             <h1 className="flex h-16 justify-center text-3xl text-orange-400 font-bold">
               Experience.
             </h1>
-            <h3 className="">
-              Mediacom Communications
-            </h3>
-            <p>Network Engineer I</p>
-            <p>* Maintained regional downstream and upstream signal quality by updating system readings for maximum data thru‐put.</p>
+              <h3>Mediacom Communications</h3>
+                <p>Network Engineer I</p>
+                  <li>Maintained regional downstream and upstream signal quality by updating system readings for maximum data thru‐put.</li>
+                  <li>Updated company database with coaxial frequency readings from area tap for system upkeep.</li>
+                  <li>Provided onboarding to newhires by showcasing best company practices, procedures, and systems to facilitate a smooth transition into their roles.</li>
           </div>
-
-          <div className="flex justify-center">
-            <Link 
-              to="/Projects"
-              className="bg-orange-500 h-10 w-32 rounded-full text-white flex justify-center items-center gap-1 hover:bg-orange-600"
-            >
-              <span role="img" aria-label="Emoji">
-                👉
-              </span>
-                Projects
-            </Link>
-          </div>
-
         </div>
       </div>
-    </Layout>
   );
 };
 

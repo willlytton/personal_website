@@ -8,3 +8,5 @@ const Custom404 = () => {
         </div>
     )
 }
+
+export default Custom404;

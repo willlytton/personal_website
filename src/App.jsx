@@ -1,33 +1,39 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import ArtPage from "./components/pages/ArtPage";
-import Projects from "./components/pages/Projects";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import ArtPage from "./pages/ArtPage";
+import Projects from "./pages/Projects";
+import Custom404 from "./pages/404";
 import "./App.css";
+
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <div>
+
+      <div>
+        <NavBar />
+      </div>
+
       <Routes>
-        <Route 
-          path="/"
-          element={<Home />}
-        />
-        <Route 
-          path="/about"
-          element={<About />}
-        />
-        <Route
-          path="/projects"
-          element={<Projects />}
-        />
-        <Route
-          path="/artpage"
-          element={<ArtPage />}
-        />
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/art" element={<ArtPage />}/>
+        <Route path="/projects" element={<Projects />}/>
       </Routes>
-    </BrowserRouter>
-  );
+
+      <Outlet />
+
+      <div>
+        <Footer />
+      </div>
+
+    </div>
+  )
 }
 
 export default App;
