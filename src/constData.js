@@ -27,6 +27,24 @@ export default {
     github: "./assets/github.svg",
   },
 
+  experience: [
+    {
+      id: 1,
+      title: "FullStack Software Engineer",
+      company: "Freelance",
+      description: "Working as a freelance software developer and designer for a variety of clients I have done everything from centering a div (literally!), to building client ideas from hand drawn website idea to fully functioning web app. During this time I have gained experience in a variety of web technologies from React with JavaScript and TypeScript to Node.JS and Python for backend development. During these ventures the most important resource for me has been the internet and the vast community of developers that maintain these modern libraries and frameworks.",
+      years: "October 2022 - Present",
+    },
+    {
+      id: 2,
+      title: "Network Engineer",
+      company: "Mediacom Communications",
+      description: "I worked as a network maintence engineer for a year acquring valuable experience learning the inner workings of coaxial cable, fiber optics, and internet infrastructure. I collaborated with several teams to ensure the stability of the regional network and to troubleshoot any issues that arose.",
+      years: "July 2021 - August 2022",
+    },
+
+  ],
+
   works: [
     {
       id: 1,

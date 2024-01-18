@@ -10,20 +10,18 @@ import Projects from "./pages/Projects";
 import Custom404 from "./pages/404";
 import "./App.css";
 
-
 const App = () => {
   return (
-    <div>
-
+    <div className="bg-gradient-to-br from-orange-400">
       <div>
         <NavBar />
       </div>
 
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/art" element={<ArtPage />}/>
-        <Route path="/projects" element={<Projects />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/art" element={<ArtPage />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
 
       <Outlet />
@@ -31,9 +29,8 @@ const App = () => {
       <div>
         <Footer />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 export default App;

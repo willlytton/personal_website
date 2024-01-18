@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import InfoCard from "../components/ui/InfoCard";
+import constData from "../constData";
 
 
 const About = () => {
@@ -12,10 +14,10 @@ const About = () => {
             </h1>
             <p className="pb-10">
               Hi, my name is William and I am fullstack software engineer with a
-              love for all things art understanding of the human experience. I believe by bridging arts and
+              love for all things art and understanding of the human experience. Call me a hopeless romantic but I believe by bridging arts and
               technology with a little bit of love we can solve most of the worlds
-              problems. I am based out of Brooklyn, NY, but I'm rooted from the
-              southern state of Georgia. If you like what you see and would like
+              problems. I am based out of Brooklyn, NY, but my roots come from the
+              peach state, Georgia. If you like what you see and would like
               to reach out please feel free to contact me using the links above
               and below.
             </p>
@@ -31,16 +33,24 @@ const About = () => {
             </p>
           </div>
 
-          <div className>
-            <h1 className="flex h-16 justify-center text-3xl text-orange-400 font-bold">
-              Experience.
-            </h1>
-              <h3>Mediacom Communications</h3>
-                <p>Network Engineer I</p>
-                  <li>Maintained regional downstream and upstream signal quality by updating system readings for maximum data thru‐put.</li>
-                  <li>Updated company database with coaxial frequency readings from area tap for system upkeep.</li>
-                  <li>Provided onboarding to newhires by showcasing best company practices, procedures, and systems to facilitate a smooth transition into their roles.</li>
+          <h1 className="flex h-16 justify-center text-3xl text-orange-400 font-bold">
+          Experience.
+          </h1>
+          
+          <div className="flex flex-col gap-5">
+            {constData.experience.map((job) => (
+              <div className="shadow-md p-10 border-radius rounded-lg bg-transparent">
+                <InfoCard
+                  key={job.id}
+                  title={job.title}
+                  company={job.company}
+                  description={job.description}
+                  years={job.years}
+                />
+              </div>
+            ))}
           </div>
+
         </div>
       </div>
   );
